@@ -1,32 +1,66 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <script type="text/javascript" src="pageable.js"></script>
+    <script type="text/javascript" src="front-end.js"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="front-end.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FTW Website Template</title>
-    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
-    <link href="./css/main.css" rel="stylesheet" type="text/css" />
-    <script src="./js/polyfills.js"></script>
-    <script src="./js/main.js"></script> </head>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/polyfills.js"></script>
+    <script src="js/main.js"></script>
+    <meta name="generator" content="Silex v2.2.7">
+    <style class="silex-inline-styles" type="text/css">
+        .silex-id-1651895318538-0 {
+            min-width: 100%;
+        }
+    </style>
+    <script type="text/javascript" class="silex-json-styles">
+        [{"desktop":{"silex-id-1651895318538-0":{"min-width":"100%"}},"mobile":{},"componentData":{}}]
+    </script>
+    <style type="text/css" class="silex-style"></style>
+    <script type="text/javascript" class="silex-script"></script>
 
-<body>
+    <!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove -->
+</head>
+
+<body class="container-element silex-id-1651895318538-0 silex-runtime" data-silex-type="container" data-silex-id="silex-id-1651895318538-0">
     <div id="sidenav">
-        <button id="sidenavBtn">&#9776;</button>
-        <img id="profilePic" alt="An avatar that aims to represent the website owner" src="./img/avatar.png">
-    </div>
+        <button id="sidenavBtn">☰</button>
+        <img id="profilePic" alt="An avatar that aims to represent the website owner" src="img/avatar.png">
+        <button disabled="" style="opacity: 0; transform: translateX(-300px);">About</button><button disabled="" style="opacity: 0; transform: translateX(-300px);">Getting started</button><button disabled="" style="opacity: 0; transform: translateX(-300px);">Contact</button>
+        <button disabled="" style="opacity: 0; transform: translateX(-300px);">Social network 1</button><button disabled="" style="opacity: 0; transform: translateX(-300px);">Social network 2</button><button style="opacity: 0; transform: translateX(-300px);">About</button>
+        <button
+            style="opacity: 0; transform: translateX(-300px);">Getting started</button><button style="opacity: 0; transform: translateX(-300px);">Contact</button><button style="opacity: 0; transform: translateX(-300px);">Social network 1</button><button style="opacity: 0; transform: translateX(-300px);">Social network 2</button></div>
     <div id="container">
-        <div id="output"></div>
+        <div id="output">Welcome to FTW (Fake Terminal Website)! :)<br>In order for you to start customizing the texts, go to js/main.js and replace the texts located at the configs var.<br>In that same file, you can define all the fake files you want as well as their
+            content. This files will appear on the sidenav.<br>Also, don't forget to change the colors on the css/main.css file as well as the website title on the index.html file.<br>Now in order to get started, feel free to either execute the 'help'
+            command or use the more user-friendly colored sidenav at your left.<br>In order to skip text rolling, double click/touch anywhere.<br></div>
         <div id="input-line" class="input-line">
-            <div id="prompt" class="prompt-color"></div>&nbsp;
+            <div id="prompt" class="prompt-color">guest@example.com:~$</div>&nbsp;
             <div>
-                <input type="text" id="cmdline" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-                    autofocus/>
+                <input type="text" id="cmdline" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus="">
             </div>
         </div>
     </div>
     <a id="githubImg" target="_blank" href="https://github.com/luisbraganca/fake-terminal-website/">
-        <img alt="Fork me on GitHub" src="./img/github_ribbon.png"> </a>
+        <img alt="Fork me on GitHub" src="img/github_ribbon.png"> </a>
+
+
+    <div class="silex-pages">
+        <div data-silex-type="image" data-silex-id="silex-id-hamburger-menu" class="menu-button editable-style silex-id-hamburger-menu image-element page-page-1 paged-element prevent-draggable prevent-resizable"><img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII="
+                class="silex-element-content"></div>
+    </div>
+
+
 </body>
 
 </html>
